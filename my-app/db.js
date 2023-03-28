@@ -7,7 +7,8 @@ function generateProducts() {
     for (let i = 1; i <= 1000; i++) {
       const product = {
         id: i,
-        name: `va la${i+1}`,
+        name: `vala ${i+1}`,
+        price: 50 + i
       };
   
       products.push(product);
