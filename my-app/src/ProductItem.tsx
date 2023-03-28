@@ -13,8 +13,8 @@ interface ProductItemProps {
 function ProductItemComponet({ product, onAddToWishList }: ProductItemProps) {
   return (
     <div>
-      <strong>{product.name}</strong> - {product.id} - valor: {product.price}
-      <button onClick={()=> onAddToWishList(product.id)}>add to list</button>
+      <strong>NAME:</strong> {product.name}<br/><strong>ID:</strong> {product.id}<br/><strong>VALOR:</strong> {product.price}
+      <br/><button onClick={()=> onAddToWishList(product.id)}>add to list</button>
     </div>
   );
 }

@@ -19,10 +19,10 @@ function App() {
     );
     const data = await response.json();
 
-      const formated = new Intl.NumberFormat('pt-BR', {
-        style: 'currency',
-        currency: 'BRL'
-      })
+      // const formated = new Intl.NumberFormat('pt-BR', {
+      //   style: 'currency',
+      //   currency: 'BRL'
+      // })
 
     // const products = data.map((product: any) => {
     //   return {
@@ -36,7 +36,7 @@ function App() {
   }
 
   const addToWishList = useCallback(async(id: number) => {
-    console.log(id)
+    alert(id)
   }, [])
 
   return (
